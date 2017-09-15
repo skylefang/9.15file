@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>history</title>
+	<style>
+	a{
+		display: block;
+		width: 220px;
+		height: 250px;
+	}
+	img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	button{
+		margin-top: 20px;
+		margin-right: 10px;
+		width: 50px;
+		height: 20px;
+		border-radius: 8px;
+		background: skyblue;
+		outline: none;
+		border: none;
+		color: #fff;
+	}
+	</style>
+
+</head>
+<body>
+	<a href="history.html"><img src="img/4时钟拟物.jpg" alt="" class="img1"></a>
+	<button id="forward"> 前进 </button>
+	<button id="back"> 后退 </button>
+	<button id="refresh"> 刷新 </button>
+</body>
+<script>
+	let forword = document.getElementById('forward');
+	let back = document.getElementById('back');
+	let refresh = document.getElementById('refresh')
+	alert(history.length);
+
+	forward.onclick=function(){
+		history.forward();
+	}
+	
+	back.onclick=function(){
+		history.back();
+	}
+	refresh.onclik=function(){
+    	history.go(0);
+    }
+
+
+</script>
+</html>

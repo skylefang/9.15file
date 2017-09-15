@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+	 function biaoge(n){
+	 	 var table="<table border=1 cellspacing=0 cellpadding=15 align=center>"
+		 for(var i=1;i<=n;i++){
+		 	table+="<tr>"
+		 	  for(var j=1;j<=n;j++){
+		 	  	table+="<td>"+i+'-'+j+"</td>"
+		 	  }
+		 	table+="</tr>"
+		 }
+		  document.write(table);
+	 }
+	 biaoge(10);
+	
+	</script>
+</body>
+</html>
